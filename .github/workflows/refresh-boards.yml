@@ -47,7 +47,8 @@ jobs:
             echo "no changes this run"
           else
             git commit -m "auto-refresh boards $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
+            # a local/human commit may have landed since checkout: rebase then retry once
+            git push || { git pull --rebase --autostash origin "${GITHUB_REF_NAME:-main}" && git push; }
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
