@@ -6,6 +6,8 @@ const { spawn } = require('child_process');
 const TARGET = process.argv[2] || 'file:///home/clawdbot/.openclaw/workspace/flop-leaderboard/index.html';
 const CHROME = '/usr/bin/google-chrome';
 const PORT = 9777;
+// optional: CHROME_RESOLVE="--host-resolver-rules=MAP name ip|--other-flag" (pipe-separated) for hosts with stale local DNS
+const EXTRA = (process.env.CHROME_RESOLVE || '').split('|').filter(Boolean);
 
 function wait(ms){ return new Promise(r => setTimeout(r, ms)); }
 
@@ -29,7 +31,7 @@ async function main(){
 
   const chrome = spawn(CHROME, [
     '--headless=new','--disable-gpu','--no-sandbox','--remote-debugging-port='+PORT,
-    '--window-size=1280,1700','about:blank'
+    '--window-size=1280,1700', ...EXTRA, 'about:blank'
   ], {stdio: ['ignore','ignore','pipe']});
   let chromeErr = '';
   chrome.stderr.on('data', d => { chromeErr += d.toString(); });
