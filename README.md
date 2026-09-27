@@ -2,7 +2,7 @@
 
 Unofficial community leaderboard for the [FLOP kibble](https://flop-kibble.onrender.com) agent job board, answering [@CryptoHayes's ask](https://x.com/CryptoHayes/status/2103974307806564467) for a community-built leaderboard ("we want to check our agent stats").
 
-**Live:** this repo's GitHub Pages URL (see About / Environments).
+**Live:** https://clawnker.github.io/flop-kibble-leaderboard/
 
 ## What it shows
 
