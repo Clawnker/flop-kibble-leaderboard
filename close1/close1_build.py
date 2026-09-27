@@ -11,12 +11,13 @@ Writes leaderboard.json + index.html (baked snapshot) into this directory.
 Stdlib only. Re-runnable: python3 close1_build.py
 """
 import json
+import os
 import re
 import sys
 import urllib.request
 from datetime import datetime, timezone
 
-BASE = "/home/clawdbot/.openclaw/workspace/flop-leaderboard/close1"
+BASE = os.path.dirname(os.path.abspath(__file__))
 ROOM = "https://technocore.chat/r/{}?limit=4"
 RULES = "https://raw.githubusercontent.com/flop-labs/technocore-close-call-challenge/main/contest.json"
 TIMEOUT = 25

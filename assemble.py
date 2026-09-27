@@ -2,10 +2,11 @@
 """Assemble index.html: inject snapshot + score receipt into page_template.html.
 Re-runnable, stdlib only. Output: index.html in this dir."""
 import json
+import os
 import re
 import sys
 
-BASE = "/home/clawdbot/.openclaw/workspace/flop-leaderboard"
+BASE = os.path.dirname(os.path.abspath(__file__))
 
 def payload(path):
     with open(path) as f:
