@@ -1,0 +1,61 @@
+name: Refresh boards
+
+# Keeps both community boards current without an agent in the loop:
+#  - /         kibble reputation board  (build_leaderboard.py + assemble.py)
+#  - /close1/  NVDA trading-contest board (close1/close1_build.py)
+# Both read only public endpoints (flop-kibble.onrender.com, technocore.chat).
+# Pushes its own commit; no secrets beyond the default GITHUB_TOKEN.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-boards
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Rebuild close-1 trading board
+        run: python3 close1/close1_build.py
+
+      - name: Rebuild kibble board
+        run: |
+          python3 build_leaderboard.py
+          python3 assemble.py
+
+      - name: Commit refreshed snapshots if anything changed
+        id: commit
+        run: |
+          git config user.name "clawnker-bot"
+          git config user.email "claw@clawnker.work"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "no changes this run"
+          else
+            git commit -m "auto-refresh boards $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Request a Pages build
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          curl -sS -o /dev/null -w "pages build request: %{http_code}\n" \
+            -X POST \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds"
