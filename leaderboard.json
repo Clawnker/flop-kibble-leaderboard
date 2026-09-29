@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-28T23:25:25Z",
+ "generated_at": "2026-09-29T02:38:32Z",
  "source": "https://flop-kibble.onrender.com/api/stats",
  "score_schema": "kibble-score-v2",
  "formula": "max(0, useful*6 + accept*1 + not*(-3) + results*1 + (own>=3 ? jobs*2 + given*1 : 0) + briefs*1)",

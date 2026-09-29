@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-28T23:25:24Z",
+ "generated_at": "2026-09-29T02:38:31Z",
  "contest_id": "close-1",
  "market": "xyz:NVDA on Hyperliquid",
  "unit": "POLF, one per US dollar of NVDA",
@@ -12,43 +12,29 @@
  "prize_pool": "1000000",
  "prize_places": 3,
  "sweep_seconds": 300,
- "referee_post_n": 1000,
- "mark": "230.81",
+ "referee_post_n": 1039,
+ "mark": "230.27",
  "ref": {
-  "px": "229.29",
-  "tid": 881643561068215,
-  "time": "2026-09-28T23:19:56.290000Z"
+  "px": "228.67",
+  "tid": 401382513062837,
+  "time": "2026-09-29T02:34:59.932000Z"
  },
  "limits": [
-  "217.83",
-  "240.75"
+  "217.24",
+  "240.10"
  ],
- "global_mark": "230.81",
+ "global_mark": "230.27",
  "referee": {
-  "flow_n": 1000,
+  "flow_n": 1039,
   "omitted": {
-   "mints": 5397,
-   "settled": 3591,
-   "void": 3916
+   "mints": 4830,
+   "settled": 3684,
+   "void": 4191
   },
   "void_recent": 0,
-  "settled_recent": 184,
+  "settled_recent": 174,
   "rooms": [
-   "zvr6",
-   "zvr12",
-   "zvr24",
-   "zvr26",
-   "zvr29",
-   "zvr30",
-   "zvr36",
-   "zvr42",
-   "zvr48",
-   "zvr60",
-   "zvr66",
-   "zvr74",
-   "zvr77",
-   "zvr78",
-   "cc1-cn"
+   "zvr54"
   ]
  },
  "board": [
@@ -56,156 +42,156 @@
    "rank": 1,
    "did": "did:key:z6MksHvqpsyG56EdTdjU26JH33Y4BD8J9qqwgpWqQ2CDrmrC",
    "short": "z6MksH\u2026rmrC",
-   "score": 881.43
+   "score": 856.2
   },
   {
    "rank": 2,
    "did": "did:key:z6MksKUvALjr2k73U3egJdpYp27pHY9oHHDpEEf4MwBCqcEk",
    "short": "z6MksK\u2026qcEk",
-   "score": 881.43
+   "score": 856.2
   },
   {
    "rank": 3,
    "did": "did:key:z6MksNKShFHH5HFYzuCciBAyzGpEgS23pcDhKK2yTRYUUaoE",
    "short": "z6MksN\u2026UaoE",
-   "score": 881.43
+   "score": 856.2
   },
   {
    "rank": 4,
    "did": "did:key:z6MksBtCo6E7LNghHmHjzabC57jAjXPpscyGXPu8Xz1Pu6HE",
    "short": "z6MksB\u2026u6HE",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 5,
    "did": "did:key:z6MksDabVCQfXMVattSDoBt8v7KgfTt42xZJCbxHfSchhZ9d",
    "short": "z6MksD\u2026hZ9d",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 6,
    "did": "did:key:z6MksEcwygUvq7RJBuWyKeWmCXiBjefPBcd74BLMnYSKtLRa",
    "short": "z6MksE\u2026tLRa",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 7,
    "did": "did:key:z6MksFjaCxY326M76SjmQiCygCLfVcfqWY6AUgGWKSST9YR5",
    "short": "z6MksF\u20269YR5",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 8,
    "did": "did:key:z6MksHqWJ6DVDMncJTYJkm4TrWzjU3zP4TZPWEnvnqYGtR43",
    "short": "z6MksH\u2026tR43",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 9,
    "did": "did:key:z6MksJJDK5Z8BvTJ1P56G9Ao1W9Jevi5TddcxP65DWKQZ8tN",
    "short": "z6MksJ\u2026Z8tN",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 10,
    "did": "did:key:z6MksL83JyG9HLj3HYLaYLRuPk5fNchRb6sssDeFTmsVxHgk",
    "short": "z6MksL\u2026xHgk",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 11,
    "did": "did:key:z6MksLWRr8Uc3PkSssSWvoa6U9mzkkLDu67oPj3a69YjPe1W",
    "short": "z6MksL\u2026Pe1W",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 12,
    "did": "did:key:z6MksLc8G3py8cb1pxhEmLYiAbZnikyLxEikAS8oxMdH4R2V",
    "short": "z6MksL\u20264R2V",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 13,
    "did": "did:key:z6MksLnMAwSkJ5EkiTKJsYGpvM6zXUYtFXmmgCo2NeVNbVnU",
    "short": "z6MksL\u2026bVnU",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 14,
    "did": "did:key:z6MksM6RUoQb8TPeSnGiumiGsvqWzMSaTq6BYEpUszcWnfre",
    "short": "z6MksM\u2026nfre",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 15,
    "did": "did:key:z6MksMRmpvBM3gLjZzrpXZuZVoi3Sg6mUZpbc4sgSLnLNjUX",
    "short": "z6MksM\u2026NjUX",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 16,
    "did": "did:key:z6MksN9eVkstgp9Six7PXvATX7SyiAhEHDHuePqVYgmbiAbK",
    "short": "z6MksN\u2026iAbK",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 17,
    "did": "did:key:z6MksNANLiVTsqjC3BJ95Q8UY1SqLpGc6xPN8d9mPfTMQSDf",
    "short": "z6MksN\u2026QSDf",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 18,
    "did": "did:key:z6MksNM2Hjqkzu6tgQxxog6uuhm2tRpAYkpbkGjT7Qg7s8xi",
    "short": "z6MksN\u2026s8xi",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 19,
    "did": "did:key:z6MksPKMgp8PMQsUktYs2EKQhMG8Wsqt5tsZB6iVEVDRVcQo",
    "short": "z6MksP\u2026VcQo",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 20,
    "did": "did:key:z6MksQCRUshPKbpkDC1g39KrPrBUCXrD5MY4sihwDmrMGrq1",
    "short": "z6MksQ\u2026Grq1",
-   "score": 881.34
+   "score": 856.12
   },
   {
    "rank": 21,
    "did": "did:key:z6MksGUgmBqiQ26HRLGFj32cXUmDEaeQsXiGdQskr3fWtgiU",
    "short": "z6MksG\u2026tgiU",
-   "score": 879.66
+   "score": 854.44
   },
   {
    "rank": 22,
    "did": "did:key:z6MksJWyn2BCGX9XPnn8My4yjSeMzDcJUMpqmX2rw5iDof1n",
    "short": "z6MksJ\u2026of1n",
-   "score": 879.66
+   "score": 854.44
   },
   {
    "rank": 23,
    "did": "did:key:z6MksNceUxs4jo7oWzGY8hyR9uLUAHYCuKvaKbWMD6GpMUco",
    "short": "z6MksN\u2026MUco",
-   "score": 879.66
+   "score": 854.44
   },
   {
    "rank": 24,
    "did": "did:key:z6MksNkEaZ6Ybso8RRmtQSqgrCaEP2qwDtKypsEkPQjJpvMv",
    "short": "z6MksN\u2026pvMv",
-   "score": 879.66
+   "score": 854.44
   },
   {
    "rank": 25,
    "did": "did:key:z6MksTEGCUCfsQncGLne6wFhf4hto4ZuJozbJ9PL4rSuHC3n",
    "short": "z6MksT\u2026HC3n",
-   "score": 879.66
+   "score": 854.44
   }
  ],
  "clusters": [
   {
-   "score": 881.43,
+   "score": 856.2,
    "n": 3,
    "first_rank": 1,
    "last_rank": 3,
@@ -216,7 +202,7 @@
    ]
   },
   {
-   "score": 881.34,
+   "score": 856.12,
    "n": 17,
    "first_rank": 4,
    "last_rank": 20,
@@ -241,7 +227,7 @@
    ]
   },
   {
-   "score": 879.66,
+   "score": 854.44,
    "n": 5,
    "first_rank": 21,
    "last_rank": 25,
