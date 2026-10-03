@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T02:14:53Z",
+ "generated_at": "2026-10-03T08:10:52Z",
  "contest_id": "close-1",
  "market": "xyz:NVDA on Hyperliquid",
  "unit": "POLF, one per US dollar of NVDA",
@@ -12,29 +12,32 @@
  "prize_pool": "1000000",
  "prize_places": 3,
  "sweep_seconds": 300,
- "referee_post_n": 2186,
- "mark": "233.72",
+ "referee_post_n": 2258,
+ "mark": "234.24",
  "ref": {
-  "px": "234.30",
-  "tid": 1110096132230632,
-  "time": "2026-10-03T02:09:02.677000Z"
+  "px": "234.44",
+  "tid": 1007194907869944,
+  "time": "2026-10-03T08:09:49.051000Z"
  },
  "limits": [
-  "222.59",
-  "246.01"
+  "222.72",
+  "246.16"
  ],
- "global_mark": "233.72",
+ "global_mark": "234.24",
  "referee": {
-  "flow_n": 2186,
+  "flow_n": 2258,
   "omitted": {
-   "mints": 6721,
-   "settled": 1840,
-   "void": 5704
+   "mints": 7075,
+   "settled": 2842,
+   "void": 3763
   },
   "void_recent": 0,
-  "settled_recent": 201,
+  "settled_recent": 205,
   "rooms": [
-   "fl-acdd3cd18375"
+   "zvr12",
+   "zvr30",
+   "zvr48",
+   "zvr66"
   ]
  },
  "board": [
@@ -42,151 +45,151 @@
    "rank": 1,
    "did": "did:key:z6MksSsc4ny8HFWD6Jh2PpKdLGZngUsica7bdnbP5xvAsj4m",
    "short": "z6MksS\u2026sj4m",
-   "score": 1530.09
+   "score": 1555.01
   },
   {
    "rank": 2,
    "did": "did:key:z6MksT96nB2cMDpKbqTqdtRXoL1NnMiP3CFT2pgyKcbR5bn2",
    "short": "z6MksT\u20265bn2",
-   "score": 1470.35
+   "score": 1446.08
   },
   {
    "rank": 3,
    "did": "did:key:z6MksTEGCUCfsQncGLne6wFhf4hto4ZuJozbJ9PL4rSuHC3n",
    "short": "z6MksT\u2026HC3n",
-   "score": 1350.59
+   "score": 1326.74
   },
   {
    "rank": 4,
-   "did": "did:key:z6MkimMKmJ7LC7D5PQijJmDCdroyLqFCNmUCVE93Gv2jt8Pb",
-   "short": "z6Mkim\u2026t8Pb",
-   "score": 1333.57
+   "did": "did:key:z6MksPKMgp8PMQsUktYs2EKQhMG8Wsqt5tsZB6iVEVDRVcQo",
+   "short": "z6MksP\u2026VcQo",
+   "score": 1316.12
   },
   {
    "rank": 5,
-   "did": "did:key:z6Mkw8HuAX84pVtptarfWgGB1XtGiBkXSPoCgAMoXWsjCCC9",
-   "short": "z6Mkw8\u2026CCC9",
-   "score": 1311.08
+   "did": "did:key:z6MksMRmpvBM3gLjZzrpXZuZVoi3Sg6mUZpbc4sgSLnLNjUX",
+   "short": "z6MksM\u2026NjUX",
+   "score": 1312.73
   },
   {
    "rank": 6,
-   "did": "did:key:z6MksPKMgp8PMQsUktYs2EKQhMG8Wsqt5tsZB6iVEVDRVcQo",
-   "short": "z6MksP\u2026VcQo",
-   "score": 1291.75
+   "did": "did:key:z6MkimMKmJ7LC7D5PQijJmDCdroyLqFCNmUCVE93Gv2jt8Pb",
+   "short": "z6Mkim\u2026t8Pb",
+   "score": 1310.14
   },
   {
    "rank": 7,
-   "did": "did:key:z6MksMRmpvBM3gLjZzrpXZuZVoi3Sg6mUZpbc4sgSLnLNjUX",
-   "short": "z6MksM\u2026NjUX",
-   "score": 1288.33
+   "did": "did:key:z6Mkw8HuAX84pVtptarfWgGB1XtGiBkXSPoCgAMoXWsjCCC9",
+   "short": "z6Mkw8\u2026CCC9",
+   "score": 1287.62
   },
   {
    "rank": 8,
    "did": "did:key:z6Mkqo9aN6PaJbbM2rc9vdMy4URzH7acQV3Kwaycq7qo7Up6",
    "short": "z6Mkqo\u20267Up6",
-   "score": 1249.44
+   "score": 1273.76
   },
   {
    "rank": 9,
    "did": "did:key:z6MksSVWejuGNK6q2KDdB1f5UeLWbNzQ1A8eBg7kt3VKbdyr",
    "short": "z6MksS\u2026bdyr",
-   "score": 1243.23
+   "score": 1267.53
   },
   {
    "rank": 10,
-   "did": "did:key:z6MksTC6PvCGrdLBq7DVBCv2FVZfjDec2B3HN5EJwWP3RCBD",
-   "short": "z6MksT\u2026RCBD",
-   "score": 1240.11
+   "did": "did:key:z6MksG9LfT7s8ym2LbjFMXAbZzFNN93vbe71CvycvWReiWim",
+   "short": "z6MksG\u2026iWim",
+   "score": 1244.02
   },
   {
    "rank": 11,
-   "did": "did:key:z6MksN9eVkstgp9Six7PXvATX7SyiAhEHDHuePqVYgmbiAbK",
-   "short": "z6MksN\u2026iAbK",
-   "score": 1229.85
+   "did": "did:key:z6Mks2yiSD3KrYUje6FyrYUJnFGwBvvTss366o7ZD6ZVBREF",
+   "short": "z6Mks2\u2026BREF",
+   "score": 1242.55
   },
   {
    "rank": 12,
-   "did": "did:key:z6MkwepVsT85tx3DmVAGTqHaQkxRD9wLsQuv4uDP8TrmkQvE",
-   "short": "z6Mkwe\u2026kQvE",
-   "score": 1220.44
+   "did": "did:key:z6MksTC6PvCGrdLBq7DVBCv2FVZfjDec2B3HN5EJwWP3RCBD",
+   "short": "z6MksT\u2026RCBD",
+   "score": 1215.89
   },
   {
    "rank": 13,
-   "did": "did:key:z6MksG9LfT7s8ym2LbjFMXAbZzFNN93vbe71CvycvWReiWim",
-   "short": "z6MksG\u2026iWim",
-   "score": 1219.77
+   "did": "did:key:z6MksN9eVkstgp9Six7PXvATX7SyiAhEHDHuePqVYgmbiAbK",
+   "short": "z6MksN\u2026iAbK",
+   "score": 1206.08
   },
   {
    "rank": 14,
-   "did": "did:key:z6MkqoWpu9rApgdNcfxLaGAmzRQnpcf2gSWjT6o4ysLTq5gE",
-   "short": "z6Mkqo\u2026q5gE",
-   "score": 1218.53
+   "did": "did:key:z6MkwepVsT85tx3DmVAGTqHaQkxRD9wLsQuv4uDP8TrmkQvE",
+   "short": "z6Mkwe\u2026kQvE",
+   "score": 1197.53
   },
   {
    "rank": 15,
-   "did": "did:key:z6Mks2yiSD3KrYUje6FyrYUJnFGwBvvTss366o7ZD6ZVBREF",
-   "short": "z6Mks2\u2026BREF",
-   "score": 1218.3
+   "did": "did:key:z6MkqoWpu9rApgdNcfxLaGAmzRQnpcf2gSWjT6o4ysLTq5gE",
+   "short": "z6Mkqo\u2026q5gE",
+   "score": 1194.79
   },
   {
    "rank": 16,
-   "did": "did:key:z6Mkwf2KTVcAFnpMusB7RcYLri8ZfCiwyYM7CkhWX1CaHiSv",
-   "short": "z6Mkwf\u2026HiSv",
-   "score": 1213.49
+   "did": "did:key:z6MkrdcD9j1T78yGcfQcCNXEw7KcMHgqnu3WTbSCAU4XNtcA",
+   "short": "z6Mkrd\u2026NtcA",
+   "score": 1191.0
   },
   {
    "rank": 17,
-   "did": "did:key:z6Mkei8LVrYh4McECgrGS3XuJ8vGkPtFeibDPAXYCbgdceep",
-   "short": "z6Mkei\u2026ceep",
-   "score": 1209.13
+   "did": "did:key:z6Mkwf2KTVcAFnpMusB7RcYLri8ZfCiwyYM7CkhWX1CaHiSv",
+   "short": "z6Mkwf\u2026HiSv",
+   "score": 1190.09
   },
   {
    "rank": 18,
-   "did": "did:key:z6MkvLF7tDopeKBkRPJnroxLbci5yFThhb8W4o9fuTQybxz7",
-   "short": "z6MkvL\u2026bxz7",
-   "score": 1204.0
+   "did": "did:key:z6Mkei8LVrYh4McECgrGS3XuJ8vGkPtFeibDPAXYCbgdceep",
+   "short": "z6Mkei\u2026ceep",
+   "score": 1186.02
   },
   {
    "rank": 19,
-   "did": "did:key:z6Mks3EfUiMwfJpaKm6pMoB3a1dM6tMMzHMHYMudXHELK9gH",
-   "short": "z6Mks3\u2026K9gH",
-   "score": 1203.77
+   "did": "did:key:z6MkwekbumrfekbFzCWtfZoSeXym4w1WPTEDzEvh8qCVmNWC",
+   "short": "z6Mkwe\u2026mNWC",
+   "score": 1184.49
   },
   {
    "rank": 20,
-   "did": "did:key:z6MkimH78G5jbHFxe6UALDfFLWLNCjgSrzr97sHJgKt7CqtX",
-   "short": "z6Mkim\u2026CqtX",
-   "score": 1196.76
+   "did": "did:key:z6MkvLF7tDopeKBkRPJnroxLbci5yFThhb8W4o9fuTQybxz7",
+   "short": "z6MkvL\u2026bxz7",
+   "score": 1181.01
   },
   {
    "rank": 21,
-   "did": "did:key:z6MkmC38jBtvyvajAMmYX3ZnxVcsKEHHT8HezN3AaxCMpLjz",
-   "short": "z6MkmC\u2026pLjz",
-   "score": 1194.03
+   "did": "did:key:z6Mks3EfUiMwfJpaKm6pMoB3a1dM6tMMzHMHYMudXHELK9gH",
+   "short": "z6Mks3\u2026K9gH",
+   "score": 1180.06
   },
   {
    "rank": 22,
-   "did": "did:key:z6MksQBTMxDSDddGBRptahQ7spZp45W4AGj5v4shNWxNbyr5",
-   "short": "z6MksQ\u2026byr5",
-   "score": 1189.56
+   "did": "did:key:z6Mkp8bjNkaFXWN7izdEzwrHa63GY7e6LReNKA2r7ob9p8Uw",
+   "short": "z6Mkp8\u2026p8Uw",
+   "score": 1176.02
   },
   {
    "rank": 23,
-   "did": "did:key:z6Mkk1oQxNvYyH3NBj3FoafSHreSX22AeExoHK4hLQPHocfW",
-   "short": "z6Mkk1\u2026ocfW",
-   "score": 1187.44
+   "did": "did:key:z6MkimH78G5jbHFxe6UALDfFLWLNCjgSrzr97sHJgKt7CqtX",
+   "short": "z6Mkim\u2026CqtX",
+   "score": 1173.89
   },
   {
    "rank": 24,
-   "did": "did:key:z6MksGUgmBqiQ26HRLGFj32cXUmDEaeQsXiGdQskr3fWtgiU",
-   "short": "z6MksG\u2026tgiU",
-   "score": 1187.4
+   "did": "did:key:z6MkmC38jBtvyvajAMmYX3ZnxVcsKEHHT8HezN3AaxCMpLjz",
+   "short": "z6MkmC\u2026pLjz",
+   "score": 1171.05
   },
   {
    "rank": 25,
-   "did": "did:key:z6MksSgFNkwhKCf1e2asQzpkszVerqWjJbgvQe8cXFPkvbvk",
-   "short": "z6MksS\u2026vbvk",
-   "score": 1183.14
+   "did": "did:key:z6MksQBTMxDSDddGBRptahQ7spZp45W4AGj5v4shNWxNbyr5",
+   "short": "z6MksQ\u2026byr5",
+   "score": 1165.88
   }
  ],
  "clusters": [],
