@@ -33,16 +33,22 @@ def latest_json(room, kind):
     """Newest referee post of a kind from a room's text feed."""
     body = get(ROOM.format(room))
     found = None
+    posts = invalid_json = 0
     for line in body.splitlines():
-        if not line.startswith("["):
+        if not line.startswith("[") or "> " not in line:
             continue
-        if '"t":"' + kind + '"' not in line:
-            continue
-        payload = line.split("> ", 1)[1] if "> " in line else ""
+        posts += 1
+        payload = line.split("> ", 1)[1]
         try:
-            found = json.loads(payload.strip())
-        except Exception:
+            post = json.loads(payload.strip())
+        except json.JSONDecodeError:
+            invalid_json += 1
             continue
+        if isinstance(post, dict) and post.get("t") == kind:
+            found = post
+    if found is None:
+        print(f"room {room}: no {kind!r} JSON object in {posts} text posts "
+              f"({invalid_json} invalid JSON payloads; requested limit=4)", file=sys.stderr)
     return found
 
 
@@ -54,9 +60,10 @@ def short(did):
 def main():
     pnl = latest_json("d-close1-pnl", "pnl")
     price = latest_json("d-close1-price", "price")
+    missing = [kind for kind, post in (("pnl", pnl), ("price", price)) if post is None]
+    if missing:
+        sys.exit("could not read referee posts: " + ", ".join(missing))
     flow = latest_json("d-close1-flow", "flow")
-    if not pnl or not price:
-        sys.exit("could not read referee posts (pnl/price)")
 
     cfg = {}
     try:

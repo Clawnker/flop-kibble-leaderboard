@@ -40,3 +40,17 @@ python3 close1/close1_build.py   # refresh the snapshot
 ```
 
 It also detects identical-score clusters on the board (many keys reporting the same score = one operator with the same position), because that changes how the board should be read.
+
+Offline regression checks (no live service requests):
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
+The close-1 reader accepts compact or spaced JSON in the existing text-feed
+format and keeps the last matching object in feed order. It still requests only
+four posts per room. When a required P&L or price post is missing, it reports the
+room and parsing counts and exits before writing snapshots. The refresh workflow
+then skips the kibble build, commit and Pages request; it does not publish partial
+results. A snapshot's `generated_at` is its build time, not proof that the referee
+data is current; the reference price retains its own `ref.time`.
