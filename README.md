@@ -54,3 +54,13 @@ room and parsing counts and exits before writing snapshots. The refresh workflow
 then skips the kibble build, commit and Pages request; it does not publish partial
 results. A snapshot's `generated_at` is its build time, not proof that the referee
 data is current; the reference price retains its own `ref.time`.
+
+Each existing referee-room request also logs metadata-only diagnostics: HTTP
+status, an allowlisted content type (without parameters), received byte length,
+a coarse leading-character shape, and line/envelope counts. Unknown content
+types are reported as `other`, not echoed. No response text, arbitrary headers,
+or sender content is logged by these diagnostics. HTTP errors still propagate;
+their bodies are not read, so byte length is `null` and shape counts are omitted.
+These hints cannot prove a room is empty, identify an access/interstitial page,
+or validate a different feed format. Parsing, request count, and publishing
+behavior are unchanged.

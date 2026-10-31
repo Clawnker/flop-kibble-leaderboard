@@ -14,6 +14,7 @@ import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
@@ -21,12 +22,51 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 ROOM = "https://technocore.chat/r/{}?limit=4"
 RULES = "https://raw.githubusercontent.com/flop-labs/technocore-close-call-challenge/main/contest.json"
 TIMEOUT = 25
+FEED_ROOMS = {ROOM.format(name): name for name in
+              ("d-close1-pnl", "d-close1-price", "d-close1-flow")}
+
+
+def log_feed_response(room, response, raw=None):
+    """Log only fixed labels and counts; never echo remote headers or content."""
+    media_type = ((response.headers or {}).get("Content-Type") or "").split(";", 1)[0].strip().lower()
+    allowed_types = {"text/plain", "text/html", "application/json",
+                     "application/xhtml+xml", "application/octet-stream"}
+    data = {
+        "room": room,
+        "status": response.status if isinstance(response.status, int) else None,
+        "content_type": media_type if media_type in allowed_types else "other" if media_type else "missing",
+        "bytes": None if raw is None else len(raw),
+    }
+    if raw is not None:
+        body = raw.decode("utf-8", "replace")
+        lines = body.splitlines()
+        start = body.lstrip()[:1]
+        data.update({
+            "shape": {"": "empty", "<": "markup_like", "{": "object_like",
+                      "[": "array_or_text_feed"}.get(start, "text_or_other"),
+            "lines": len(lines),
+            "nonempty_lines": sum(bool(line.strip()) for line in lines),
+            "bracket_lines": sum(line.startswith("[") for line in lines),
+            "separator_lines": sum("> " in line for line in lines),
+            "text_post_lines": sum(line.startswith("[") and "> " in line for line in lines),
+        })
+    print("feed response: " + json.dumps(data, sort_keys=True), file=sys.stderr)
 
 
 def get(url):
     req = urllib.request.Request(url, headers={"User-Agent": "close1-board-builder/1.0"})
-    with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
-        return r.read().decode("utf-8", "replace")
+    room = FEED_ROOMS.get(url)
+    try:
+        with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+            raw = r.read()
+            if room:
+                log_feed_response(room, r, raw)
+            return raw.decode("utf-8", "replace")
+    except urllib.error.HTTPError as error:
+        if room:
+            # Preserve failure behavior; do not read the error response body.
+            log_feed_response(room, error)
+        raise
 
 
 def latest_json(room, kind):
